@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#012C60 ">
+        
+    <div class="tudo">
+        <img class="img-estelar" src="asset/mulher.png" alt="">
+        <img class="img-onda" src="asset/estrelas.png" alt="" >
+        <header>
+            <img src="asset/images.png" alt="" width="70px">
+            <button class="buthea" onmousemove="passarmous()" onmouseout="retirarmous()" onclick="opacity()">Mudar cor</button>
+
+        </header>
+
+        <h1>Fazer login</h1>
+        <form action="_graphes.php" method="post" class="quadrado" id="formulario">
+            <label for="gg" class="pp"> E-mail ou Telefone </label>
+            <input onfocus="levantando()" type="email"  id="gg" placeholder="E-mail">
+            <label class="ddbel" for="dd">Senha</label>
+            <input type="password" class="dd" placeholder="senha" >
+            <button onmousemove="passarmouse()" onmouseout="retirarmouse()" onclick="return envia()" class="butt" id="hg">Login</button>
+            <p>Não tem conta? <a href="#">Criar conta</a></p>
+
+        </form>
+    </div>
+<style>
+    button:active{
+        opacity: .25;
+    }
+</style>
+
+
+<script src="app.js"></script>
+ </body>
+</html>
